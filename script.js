@@ -95,3 +95,21 @@ document.addEventListener('DOMContentLoaded', () => {
   initializePlayerSearch();
   initializeSmoothScroll();
 });
+
+// 🔝 Show/Hide Back-to-Top Button
+window.addEventListener('scroll', () => {
+  const topButton = document.getElementById('back-to-top');
+  if (window.scrollY > 300) {
+    topButton.style.display = 'block';
+  } else {
+    topButton.style.display = 'none';
+  }
+});
+
+// 🔝 Smooth scroll to top
+document.getElementById('back-to-top').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
