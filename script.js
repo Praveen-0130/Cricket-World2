@@ -106,3 +106,18 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 5000); // match animation duration
   }
 });
+function createFloatingItem() {
+  const container = document.querySelector(".float-container");
+  const item = document.createElement("img");
+  item.src = Math.random() > 0.5 ? "assets/ball.svg" : "assets/bat.svg";
+  item.className = "float-item";
+  item.style.left = `${Math.random() * 100}vw`;
+  item.style.animationDuration = `${3 + Math.random() * 4}s`;
+  container.appendChild(item);
+
+  // Remove item after animation completes
+  setTimeout(() => container.removeChild(item), 7000);
+}
+
+// Generate floating items every 400ms
+setInterval(createFloatingItem, 400);
