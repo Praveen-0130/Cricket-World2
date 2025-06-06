@@ -95,3 +95,14 @@ document.addEventListener('DOMContentLoaded', () => {
   initializePlayerSearch();
   initializeSmoothScroll();
 });
+window.addEventListener("DOMContentLoaded", () => {
+  const ball = document.querySelector(".rolling-ball-container");
+
+  // Remove ball after animation
+  if (ball) {
+    setTimeout(() => {
+      ball.style.opacity = "0";
+      ball.style.display = "none";
+    }, 5000); // match animation duration
+  }
+});
