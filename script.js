@@ -49,6 +49,13 @@ function initializeMatchCountdowns() {
   });
 }
 
+// Theme Toggle Logic
+document.getElementById("theme-toggle").addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("light-mode");
+});
+
+
 // Player search filter
 function initializePlayerSearch() {
   const container = document.querySelector('.featured-players .container');
