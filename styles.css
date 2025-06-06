@@ -5,6 +5,21 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+.rolling-ball-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: moveAcross 5s linear forwards;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes moveAcross {
+  0% { transform: translateX(-100px); opacity: 1; }
+  90% { transform: translateX(-10px); opacity: 1; }
+  100% { transform: translateX(0); opacity: 0; }
+}
+
 
 .player:nth-child(1) {
   background-color: #01e240;
