@@ -130,6 +130,15 @@ body.dark-mode {
   cursor: pointer;
 }
 
+#toss-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
 
 .player:nth-child(14) {
