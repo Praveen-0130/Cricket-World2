@@ -55,6 +55,11 @@ document.getElementById("theme-toggle").addEventListener("click", function () {
   document.body.classList.toggle("light-mode");
 });
 
+function tossCoin() {
+  const outcome = Math.random() < 0.5 ? "Heads - Team A bats first!" : "Tails - Team B bats first!";
+  document.getElementById("toss-result").innerText = outcome;
+}
+
 
 // Player search filter
 function initializePlayerSearch() {
