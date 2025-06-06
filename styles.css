@@ -109,6 +109,28 @@ body {
   border-radius: 10px;
 }
 
+/* Light Theme (default) */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#theme-toggle {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
 
 .player:nth-child(14) {
   background-color: #1a5f80;
