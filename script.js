@@ -123,3 +123,27 @@ function displayTopScorer() {
 }
 
 window.addEventListener('load', displayTopScorer);
+// 🧠 Match Predictor Feature
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("predictor-form");
+  const resultDiv = document.getElementById("prediction-result");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const selected = form.team.value;
+    const feedback = [
+      "Interesting choice!",
+      "You're backing a strong team!",
+      "Let’s see if your prediction comes true!",
+      "Cricket is unpredictable, but good luck!"
+    ];
+    const randomMessage = feedback[Math.floor(Math.random() * feedback.length)];
+
+    resultDiv.innerHTML = `
+      <p>You predicted: <strong>${selected}</strong></p>
+      <p>${randomMessage}</p>
+    `;
+
+    form.reset();
+  });
+});
