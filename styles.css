@@ -412,6 +412,58 @@ header, footer {
   text-align: center;
 }
 
+.highlight-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.scorer-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.scorer-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.scorer-info {
+  max-width: 400px;
+  text-align: left;
+}
+
+.scorer-info h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.predictor-section {
+  background-color: #fff5e1;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-top: 4px dashed #ff9800;
+}
+
+#predictor-form {
+  font-size: 18px;
+}
+
+#predictor-form input[type="radio"] {
+  margin-right: 10px;
+}
+
+#prediction-result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+
+
 /* 🔁 Live Score Ticker */
 #score-ticker {
   position: fixed;
@@ -449,5 +501,5 @@ header, footer {
 }
 
 #back-to-top:hover {
-  background-color: #005f73;
+
 }

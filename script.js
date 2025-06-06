@@ -95,6 +95,57 @@ document.addEventListener('DOMContentLoaded', () => {
   initializePlayerSearch();
   initializeSmoothScroll();
 });
+// Top Scorer Widget
+function displayTopScorer() {
+  const widget = document.createElement('div');
+  widget.className = 'top-scorer-widget';
+  widget.style.position = 'fixed';
+  widget.style.bottom = '20px';
+  widget.style.right = '20px';
+  widget.style.backgroundColor = '#222';
+  widget.style.color = '#fff';
+  widget.style.padding = '15px';
+  widget.style.borderRadius = '8px';
+  widget.style.boxShadow = '0 0 10px rgba(0,0,0,0.3)';
+  widget.style.zIndex = '9999';
+  widget.innerHTML = `
+    <strong>🏆 Top Scorer This Week</strong><br>
+    Rohit Sharma<br>
+    <small>Runs: 372</small>
+  `;
+
+  document.body.appendChild(widget);
+
+  // Auto-hide after 10 seconds
+  setTimeout(() => {
+    widget.remove();
+  }, 10000);
+}
+
+window.addEventListener('load', displayTopScorer);
+// 🧠 Match Predictor Feature
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("predictor-form");
+  const resultDiv = document.getElementById("prediction-result");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const selected = form.team.value;
+    const feedback = [
+      "Interesting choice!",
+      "You're backing a strong team!",
+      "Let’s see if your prediction comes true!",
+      "Cricket is unpredictable, but good luck!"
+    ];
+    const randomMessage = feedback[Math.floor(Math.random() * feedback.length)];
+
+    resultDiv.innerHTML = `
+      <p>You predicted: <strong>${selected}</strong></p>
+      <p>${randomMessage}</p>
+    `;
+
+    form.reset();
+
 
 // 🔝 Show/Hide Back-to-Top Button
 window.addEventListener('scroll', () => {
@@ -111,5 +162,6 @@ document.getElementById('back-to-top').addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
+
   });
 });
