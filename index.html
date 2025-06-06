@@ -50,6 +50,35 @@
       </div>
     </div>
   </section>
+<!-- 🏆 Top Scorer of the Week Section -->
+<section id="top-scorer" class="highlight-section">
+  <div class="container">
+    <h2>🏏 Top Scorer of the Week</h2>
+    <div class="scorer-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rohit_Sharma.jpg/440px-Rohit_Sharma.jpg" alt="Top Scorer" />
+      <div class="scorer-info">
+        <h3>Rohit Sharma</h3>
+        <p><strong>Runs:</strong> 372</p>
+        <p><strong>Matches Played:</strong> 4</p>
+        <p><strong>Strike Rate:</strong> 145.3</p>
+        <p>Leading the charge this week with consistent top-order performances!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 🔮 Match Predictor Quiz -->
+<section id="match-predictor" class="predictor-section">
+  <div class="container">
+    <h2>🔮 Match Predictor</h2>
+    <p>Who do you think will win today's match?</p>
+    <form id="predictor-form">
+      <label><input type="radio" name="team" value="Team A" required> Team A</label><br>
+      <label><input type="radio" name="team" value="Team B"> Team B</label><br><br>
+      <button type="submit">Submit Prediction</button>
+    </form>
+    <div id="prediction-result"></div>
+  </div>
+</section>
 
 <!-- Theme Toggle Button -->
 <button id="theme-toggle" style="position: fixed; top: 10px; right: 10px;">
@@ -85,5 +114,16 @@
       <p>&copy; 2025 Cricket World. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- 🔁 Live Score Ticker -->
+<div id="score-ticker">
+  <marquee behavior="scroll" direction="left" scrollamount="5" id="score-text">
+    India 245/6 (45.3) vs Australia | England 312/8 (50.0) vs South Africa | Pakistan 198/5 (37.0) vs New Zealand
+  </marquee>
+</div>
+
+<!-- 🔝 Back to Top Button -->
+<button id="back-to-top">↑ Top</button>
+
 </body>
 </html>
