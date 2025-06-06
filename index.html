@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket World - The Ultimate Fan Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Cricket World</h1>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#News">News</a></li>
+          <li><a href="#Teams">Teams</a></li>
+          <li><a href="#Matches">Matches</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to the Ultimate Cricket Fan Site</h2>
+      <p>Your source for all things cricket — news, stats, schedules, and more!</p>
+      <button onclick="alert('Subscribe')">Subscribe Now</button>
+    </div>
+  </section>
+
+  <section class="featured-players">
+    <div class="container">
+      <h2>Featured Players</h2>
+      <!-- 50 player cards dynamically generated -->
+      <div class="players-wrapper">
+        <!-- Example static content (repeat for 50 players) -->
+        <div class="player">
+          <img src="assets/player1.jpg" alt="Player 1" />
+          <h3>Player Name 1</h3>
+          <p>Bio for player 1 with a notable history in international cricket and domestic leagues.</p>
+        </div>
+        <!-- Repeat the above block for players 2–50 -->
+      </div>
+    </div>
+  </section>
+
+  <section class="match-schedule">
+    <div class="container">
+      <h2>Upcoming Matches</h2>
+      <!-- 50 upcoming matches dynamically generated -->
+      <div class="matches-wrapper">
+        <!-- Example static content (repeat for 50 matches) -->
+        <div class="match">
+          <h4>Match 1: Team A vs Team B</h4>
+          <p>Date: 2025-06-11</p>
+          <p>Venue: Cricket Stadium 1</p>
+        </div>
+        <!-- Repeat the above block for matches 2–50 -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Cricket World. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
